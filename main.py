@@ -24,4 +24,12 @@ class Chef(Employee):
 
     def work(self):
         print("%(name)s makes food" % dict(name=self.name))
+        
+class waiter(Employee):
+    def __int__(self, name, salary=4000):
+        self.name = name
+        self.salary = salary
+
+    def work(self):
+        print("%(name)s serves customers" % dict(name=self.name))
 

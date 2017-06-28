@@ -16,3 +16,12 @@ class Employee(object):
 
     def __repr__(self):
         return "<Employee: %(name)s, Salary: %(salary)s>" % dict(name=self.name, salary=self.salary)
+
+class Chef(Employee):
+    def __init__(self, name, salary=5000):
+        self.name = name
+        self.salary = salary
+
+    def work(self):
+        print("%(name)s makes food" % dict(name=self.name))
+

@@ -28,6 +28,7 @@ class Waiter(Employee):
     def __init__(self, name, salary=4000):
         super(Waiter, self).__init__(name, salary)
 
+
     def work(self):
         print("%(name)s serves customers" % dict(name=self.name))
 
@@ -37,3 +38,4 @@ class PizzaRobot(Chef):
 
     def work(self):
         print("%(name)s makes pizza" % dict(name=self.name))
+

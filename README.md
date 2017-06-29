@@ -1,3 +1,5 @@
 # GitTutorial
 
-this is a simple collaboration project
+this is a simple collaboration project.
+
+**CLOSED**

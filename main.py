@@ -19,23 +19,21 @@ class Employee(object):
 
 class Chef(Employee):
     def __init__(self, name, salary=5000):
-        self.name = name
-        self.salary = salary
+        super(Chef, self).__init__(name,salary)
 
     def work(self):
         print("%(name)s makes food" % dict(name=self.name))
 
 class Waiter(Employee):
     def __init__(self, name, salary=4000):
-        self.name = name
-        self.salary = salary
+        super(Waiter, self).__init__(name, salary)
 
     def work(self):
         print("%(name)s serves customers" % dict(name=self.name))
 
 class PizzaRobot(Chef):
     def __init__(self, name):
-        self.name = name
+        super(PizzaRobot, self).__init__(name)
 
     def work(self):
         print("%(name)s makes pizza" % dict(name=self.name))
